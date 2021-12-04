@@ -1,0 +1,77 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "prettier"
+    ],
+    "rules":  {
+        "semi": 2,
+        "curly": 2,
+        "member-access": 0,
+        "trailing-comma": 0,
+        "quotemark": 0,
+        "react/prop-types": 0,
+        "sort-keys": [
+          "warn",
+          "asc",
+          {
+            "caseSensitive": true,
+            "natural": false
+          }
+        ],
+        "@typescript-eslint/array-type": [
+          "error",
+          {
+            "default": "generic",
+            "readonly": "generic"
+          }
+        ],
+        "no-debugger": 2,
+        "no-console": 0,
+        "no-namespace": 0,
+        "no-var": 2,
+        "no-redeclare": 2,
+        "no-duplicate-imports": 2,
+        "no-delete-var": 2,
+        "variable-name": 0,
+        "object-literal-key-quotes": 0,
+        "@typescript-eslint/no-inferrable-types": 0,
+        "@typescript-eslint/no-object-literal-type-assertion": 0,
+        "@typescript-eslint/explicit-function-return-type": 0,
+        "@typescript-eslint/no-explicit-any": 0,
+        "@typescript-eslint/explicit-member-accessibility": 0,
+        "@typescript-eslint/no-unused-vars": 0,
+        "@typescript-eslint/no-non-null-assertion": 0,
+        "@typescript-eslint/no-empty-interface": 0,
+        "react/display-name": 0,
+        "react/no-children-prop": 1,
+        "jsx-no-lambda": 0,
+        "jsx-boolean-value": 0,
+        "jsx-no-multiline-js": 0,
+        "radix": 2,
+        "default-case": 2,
+        "eqeqeq": 2
+      },
+      "settings": {
+        "react": {
+          "version": "detect" // Tells eslint-plugin-react to automatically detect the version of React to use
+        }
+      }
+}
